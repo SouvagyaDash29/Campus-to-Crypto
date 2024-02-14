@@ -1,0 +1,36 @@
+.navbar{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.circle{
+    position: absolute;
+    width: 28vw;
+    height: 28vw;
+    background-color: #6843EC;
+    z-index: -1;
+    top: -6vw;
+    left: -9vw;
+    border-radius: 50%;
+    filter: blur(6vw);
+}
+.navigation ul{
+    display: flex;
+    justify-content: space-around;
+
+    gap: 2vw;
+    list-style-type: none;
+    padding: 2vw;
+}
+.navigation ul li a{
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.16vw;
+}
