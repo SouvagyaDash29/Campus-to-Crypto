@@ -19,7 +19,16 @@ import SampleImg3 from "../../Assets/images/sampleimg3.avif";
 import SampleImg4 from "../../Assets/images/sampleimg4.avif";
 import SampleImg5 from "../../Assets/images/sampleimg5.avif";
 import ReginaImg from "../../Assets/images/regina4.png";
-import Backimg from '../../Assets/images/backgroundIMAGE.png'
+import Backimg from '../../Assets/images/backgroundIMAGE.png';
+// import image1 from '../../Assets/images/image9.png';
+// import image2 from '../../Assets/images/image10.png';
+// import image3 from '../../Assets/images/image11.png';
+// import image4 from '../../Assets/images/image12.png';
+// import image5 from '../../Assets/images/image13.png';
+// import image6 from '../../Assets/images/image14.png';
+// import image7 from '../../Assets/images/image15.png';
+// import image8 from '../../Assets/images/image16.png';
+
 
 const data = [
   {
@@ -67,6 +76,33 @@ const count =  [
     title: "ACCOUNT"
   }
 ];
+
+// const photos = [
+//   {
+//     number: "40,000",
+//     subtitle: "BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER",
+//     photo: image1,
+//     photo2: image2
+//   },
+//   {
+//     number: "42,000",
+//     subtitle: "BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER",
+//     photo: image3,
+//     photo2: image4
+//   },
+//   {
+//     number: "40,000",
+//     subtitle: "BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER",
+//     photo: image5,
+//     photo2: image6
+//   },
+//   {
+//     number: "40,000",
+//     subtitle: "BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER",
+//     photo: image7,
+//     photo2: image8
+//   },
+// ]
 
 const Home = () => {
   const [typeEffect] = useTypewriter({
@@ -195,6 +231,29 @@ const Home = () => {
                </div>
               ))}
             </div>
+
+            {/* <div className="section7">
+              <h1>Journey Through Art of community</h1>
+              {photos.map((elements, index) => (
+                
+                  <div className="section7-whole" key={index}>
+                  <div className="section7-left">
+                  <div className="left-details">
+                  <h2>{elements.number}</h2>
+                  <label> {elements.subtitle}</label>
+                  </div>
+                  <div className="left-image">
+                  <img src={elements.photo} alt="img" />
+                  </div>
+                </div>
+                <div className="section7-right">
+                  <img src={elements.photo2} alt="img" />
+                </div>
+                </div>
+                
+                
+              ))}
+            </div> */}
 
             </div>
       </>
