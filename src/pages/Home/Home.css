@@ -7,15 +7,15 @@
     display: flex;
     justify-content: space-between;
     gap: 10vw;
-    width: 90%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
 .section1-left{
-    text-align:left ;
-    max-width: 38%;
-    font-size: 3.7vw;
-    font-weight: 400;
+    /* text-align:left ; */
+    max-width: 40%;
+    font-size: 3.6vw;
+    font-weight: 500;
 }
 .section1-left span{
     font-size: 5.4vw;
@@ -25,18 +25,18 @@
 .section1-right{
     display: flex;
     flex-direction: column;
-    font-size: 2.3vw;
-    max-width: 50%;
+    font-size: 1.7vw;
+    max-width: 40%;
 }
 .section1-right span{
-    max-width: 90%;
-    font-size: 1.2vw;
+    width: 69%;
+    font-size: 1vw;
 }
 .section2{
     display: flex;
     margin-top: 10vw;
     gap: 1vw;
-    width: 90%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -243,8 +243,9 @@
 .count{
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 10vw;
+    /* position: relative;
+    top: 10vw; */
+    margin-top: 10vw;
     column-gap: 10vw;
     font-size: 2.5vw;
     color: #6843EC;
@@ -257,4 +258,12 @@
     color: white;
     font-weight: 400;
     font-size: 1.3vw;
+}
+.section7{
+    /* position: relative;
+    top: 15vw; */
+}
+.section7-whole{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }

@@ -9,24 +9,24 @@ const Navbar = () => {
       <div className="circle"></div>
       <div className="navbar">
         <div className="home">
-          <Link to="/*">
+          <Link to="/">
             <img src="" alt="LoGo" />
           </Link>
         </div>
         <div className="navigation">
           <ul>
             <li>
-              <NavLink to="/*">
+              <NavLink to="/About">
                 About <IoIosArrowDown />
               </NavLink>
             </li>
             <li>
-              <NavLink to="/*">
+              <NavLink to="/Product">
                 Product <IoIosArrowDown />
               </NavLink>
             </li>
             <li>
-              <NavLink to="/*">
+              <NavLink to="/Community">
                 Community <IoIosArrowDown />
               </NavLink>
             </li>
