@@ -1,3 +1,6 @@
+.footer-section{
+    margin-top: 2vw;
+}
 .footer-section-content{
     width: 70%;
     margin-left: auto;
@@ -41,9 +44,15 @@
 }
 .footer-section-right ul{
     padding-left: 0vw;
+    
 }
 .footer-section-right a{
     text-decoration: none;
     color: #848895;
+    
 
+}
+.footer-section-right a:hover{
+    color: white;
+    transform: scale(1.1);
 }

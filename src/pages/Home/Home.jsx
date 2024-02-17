@@ -6,7 +6,7 @@ import YTicon from "../../Assets/svg/youtube-color-icon.svg";
 import Podcast from "../../Assets/svg/apple-podcasts-icon.svg";
 import Bimage from "../../Assets/svg/Group 17.svg";
 import Shape from "../../Assets/svg/Group 16.svg";
-import Square from "../../Assets/svg/Rectangle 131.svg";
+// import Square from "../../Assets/svg/Rectangle 131.svg";
 import Person1 from "../../Assets/images/ellipse-10.png";
 import Person2 from "../../Assets/images/ellipse-20.png";
 import Person3 from "../../Assets/images/ellipse-30.png";
@@ -19,16 +19,15 @@ import SampleImg3 from "../../Assets/images/sampleimg3.avif";
 import SampleImg4 from "../../Assets/images/sampleimg4.avif";
 import SampleImg5 from "../../Assets/images/sampleimg5.avif";
 import ReginaImg from "../../Assets/images/regina4.png";
-import Backimg from '../../Assets/images/backgroundIMAGE.png';
-// import image1 from '../../Assets/images/image9.png';
-// import image2 from '../../Assets/images/image10.png';
-// import image3 from '../../Assets/images/image11.png';
-// import image4 from '../../Assets/images/image12.png';
-// import image5 from '../../Assets/images/image13.png';
-// import image6 from '../../Assets/images/image14.png';
-// import image7 from '../../Assets/images/image15.png';
-// import image8 from '../../Assets/images/image16.png';
-
+import Backimg from "../../Assets/images/backgroundIMAGE.png";
+import image1 from "../../Assets/images/image9.png";
+import image2 from "../../Assets/images/image10.png";
+import image3 from "../../Assets/images/image11.png";
+import image4 from "../../Assets/images/image12.png";
+import image5 from "../../Assets/images/image13.png";
+import image6 from "../../Assets/images/image14.png";
+import image7 from "../../Assets/images/image15.png";
+import image8 from "../../Assets/images/image16.png";
 
 const data = [
   {
@@ -62,47 +61,20 @@ const data = [
     role: "CEO xyz",
   },
 ];
-const count =  [
+const count = [
   {
     number: "7+",
-    title: "YEARS"
+    title: "YEARS",
   },
   {
     number: "18+",
-    title: "ACTIVE"
+    title: "ACTIVE",
   },
   {
     number: "30+",
-    title: "ACCOUNT"
-  }
+    title: "ACCOUNT",
+  },
 ];
-
-// const photos = [
-//   {
-//     number: "40,000",
-//     subtitle: "BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER",
-//     photo: image1,
-//     photo2: image2
-//   },
-//   {
-//     number: "42,000",
-//     subtitle: "BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER",
-//     photo: image3,
-//     photo2: image4
-//   },
-//   {
-//     number: "40,000",
-//     subtitle: "BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER",
-//     photo: image5,
-//     photo2: image6
-//   },
-//   {
-//     number: "40,000",
-//     subtitle: "BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER",
-//     photo: image7,
-//     photo2: image8
-//   },
-// ]
 
 const Home = () => {
   const [typeEffect] = useTypewriter({
@@ -138,7 +110,7 @@ const Home = () => {
           </div>
           <div className="section2-right">
             <div className="right-side-1">
-              <img src={Square} alt="img" />
+              {/* <img src={Square} alt="img" /> */}
             </div>
             <div className="right-side-2">
               <img src={Shape} alt="img" />
@@ -222,42 +194,79 @@ const Home = () => {
           </div>
         </div>
 
-                        {/* SECTION 6 */}
-            <div className="count">
-              {count.map((Count, index) => (
-               <div className="innner-count" key={index}>
-                 <h1>{Count.number}</h1>
-                <h3>{Count.title}</h3>
-               </div>
-              ))}
+        {/* SECTION 6 */}
+        <div className="count">
+          {count.map((Count, index) => (
+            <div className="innner-count" key={index}>
+              <h1>{Count.number}</h1>
+              <h3>{Count.title}</h3>
             </div>
+          ))}
+        </div>
 
-            {/* <div className="section7">
-              <h1>Journey Through Art of community</h1>
-              {photos.map((elements, index) => (
-                
-                  <div className="section7-whole" key={index}>
-                  <div className="section7-left">
-                  <div className="left-details">
-                  <h2>{elements.number}</h2>
-                  <label> {elements.subtitle}</label>
-                  </div>
-                  <div className="left-image">
-                  <img src={elements.photo} alt="img" />
-                  </div>
+        <div className="section7">
+          <h1>Journey Through Art of community</h1>
+          <div className="section7-content">
+            <div className="content-sec1">
+              <div className="content-left">
+                <div className="block1">
+                  <h2>48,000</h2>
+                  <span>BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER</span>
                 </div>
-                <div className="section7-right">
-                  <img src={elements.photo2} alt="img" />
+                <div className="block2">
+                  <img src={image1} alt="img" />
                 </div>
-                </div>
-                
-                
-              ))}
-            </div> */}
-
+              </div>
+              <div className="content-right">
+                <img src={image2} alt="img2" />
+              </div>
             </div>
-      </>
-    
+            <div className="content-sec2">
+              <div className="content-left">
+                <div className="block2">
+                  <img src={image3} alt="img" />
+                </div>
+                <div className="block1">
+                  <h2>48,000</h2>
+                  <span>BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER</span>
+                </div>
+              </div>
+              <div className="content-right">
+                <img src={image4} alt="img2" />
+              </div>
+            </div>
+            <div className="content-sec1">
+              <div className="content-left">
+                <div className="block1">
+                  <h2>48,000</h2>
+                  <span>BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER</span>
+                </div>
+                <div className="block2">
+                  <img src={image5} alt="img" />
+                </div>
+              </div>
+              <div className="content-right">
+                <img src={image6} alt="img2" />
+              </div>
+            </div>
+            <div className="content-sec2">
+              <div className="content-left">
+                <div className="block2">
+                  <img src={image7} alt="img" />
+                </div>
+                <div className="block1">
+                  <h2>48,000</h2>
+                  <span>BLOCKCHAIN TECHNOLOGY EXPLORE THE POWER</span>
+                </div>
+              </div>
+              <div className="content-right">
+                <img src={image8} alt="img2" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

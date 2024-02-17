@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -16,18 +15,33 @@ const Navbar = () => {
         <div className="navigation">
           <ul>
             <li>
-              <NavLink to="/About">
-                About <IoIosArrowDown />
+              <NavLink
+                to="/About"
+                style={({ isActive }) => {
+                  return isActive ? { color: "blue" } : { color: "white" };
+                }}
+              >
+                About
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Product">
-                Product <IoIosArrowDown />
+              <NavLink
+                to="/Product"
+                style={({ isActive }) => {
+                  return isActive ? { color: "blue" } : { color: "white" };
+                }}
+              >
+                Product
               </NavLink>
             </li>
             <li>
-              <NavLink to="/Community">
-                Community <IoIosArrowDown />
+              <NavLink
+                to="/Community"
+                style={({ isActive }) => {
+                  return isActive ? { color: "blue" } : { color: "white" };
+                }}
+              >
+                Community
               </NavLink>
             </li>
           </ul>
