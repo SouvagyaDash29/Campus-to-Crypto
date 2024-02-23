@@ -6,21 +6,22 @@
     align-items: center;
     justify-content: space-between;
 }
-.circle{
-    position: absolute;
-    width: 28vw;
-    height: 28vw;
+/* .circle2{
+    width: 80vw;
+    height: 20vw;
     background-color: #6843EC;
+    position: absolute;
+    left: 4vw;
+    top: -10vw;
     z-index: -1;
-    top: -6vw;
-    left: -9vw;
     border-radius: 50%;
-    filter: blur(6vw);
-}
+    filter: blur(7vw);
+
+} */
 .navigation ul{
     display: flex;
     justify-content: space-around;
-
+    align-items: center;
     gap: 2vw;
     list-style-type: none;
     padding: 2vw;
@@ -33,4 +34,17 @@
     color: white;
     font-weight: 400;
     font-size: 1.16vw;
+}
+.navigation button{
+    background-color: transparent;
+    padding: 0.7vw 1vw;
+    border: 0.13vw solid white;
+    color: white;
+    border-radius: 1.5vw;
+    cursor: pointer;
+}
+.home img{
+    width: 25vw;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
