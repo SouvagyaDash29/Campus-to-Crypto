@@ -29,6 +29,7 @@ import image6 from "../../Assets/images/image14.png";
 import image7 from "../../Assets/images/image15.png";
 import image8 from "../../Assets/images/image16.png";
 
+
 const data = [
   {
     image: SampleImg1,
@@ -85,6 +86,7 @@ const Home = () => {
   });
   return (
     <>
+    <div className="circle"></div>
       <div className="home">
         {/* SECTION 1 */}
         <div className="section1">
