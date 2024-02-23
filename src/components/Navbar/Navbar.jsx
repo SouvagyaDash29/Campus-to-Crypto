@@ -5,7 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav>
-      <div className="circle"></div>
+      <div className="circle2"></div>
       <div className="navbar">
         <div className="home">
           <Link to="/">
@@ -44,6 +44,7 @@ const Navbar = () => {
                 Community
               </NavLink>
             </li>
+          <NavLink to='/Contact'><button>Contact US</button></NavLink>
           </ul>
         </div>
       </div>
