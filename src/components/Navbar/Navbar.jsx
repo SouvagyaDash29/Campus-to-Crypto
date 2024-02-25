@@ -44,7 +44,9 @@ const Navbar = () => {
                 Community
               </NavLink>
             </li>
-          <NavLink to='/Contact'><button>Contact US</button></NavLink>
+            <NavLink to="/Contact">
+              <button>Contact US</button>
+            </NavLink>
           </ul>
         </div>
       </div>
