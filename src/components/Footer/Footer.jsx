@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { GrYoutube } from "react-icons/gr";
 import { BsTwitterX } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
@@ -46,9 +46,8 @@ const Footer = () => {
         
       </div>
     </footer>
-
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
