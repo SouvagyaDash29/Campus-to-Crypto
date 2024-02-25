@@ -64,7 +64,7 @@
     width: 18vw;
 }
 .right-side-1::after{
-    content: "100+ projects";
+    content: "30+ projects";
     font-size: 3vw;
     font-weight: 500;
     text-align: center;
@@ -149,7 +149,7 @@
     gap: 2vw;
 }
 .section3-down img{
-    width: 8%;
+    width: 11%;
     aspect-ratio: 3/2;
     object-fit: contain;
 
@@ -194,13 +194,14 @@
     background-color: transparent;
     color: white;
     border: 0.15vw solid white;
-    padding: 0.5vw 2vw;
-    border-radius: 1vw;
+    padding: 0.6vw 2vw;
+    border-radius: 1.2vw;
     display: flex;
     align-items: center;
     margin-top: 1vw;
     column-gap: 0.5vw;
     font-size: 0.8vw;
+    cursor: pointer;
     
 }
 
@@ -224,6 +225,8 @@
     border-radius: 2vw;
     font-weight: 600;
     font-size: 0.97vw; 
+    cursor: pointer;
+    border: none;
 
 }
 .backgroungImg img{
@@ -274,7 +277,8 @@
     top: 10vw; */
     margin-top: 10vw;
     column-gap: 10vw;
-    font-size: 2.5vw;
+    font-size: 3vw;
+    font-weight: 700;
     color: #6843EC;
     text-align: center;
 }
@@ -284,7 +288,7 @@
 .innner-count h3{
     color: white;
     font-weight: 400;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
 }
 .section7-content{
     display: flex;
@@ -327,6 +331,7 @@
 }
 .block2 img{
     width: 20.7vw;
+    object-fit: cover;
 }
 .content-right img{
     width: 41.5vw;

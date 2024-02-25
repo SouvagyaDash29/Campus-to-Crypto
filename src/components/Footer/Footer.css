@@ -1,6 +1,8 @@
-.footer-section{
-    margin-top: 20vw;
+.main-right-side{
+    display: flex;
+    gap: 2.5vw;
 }
+
 .footer-section-content{
     width: 70%;
     margin-left: auto;
@@ -16,6 +18,9 @@
     display: flex;
     flex-direction: column;
     gap: 1vw;
+}
+.footer-section-left img{
+    width: 3vw;
 }
 .social-media-logo{
     display: flex;

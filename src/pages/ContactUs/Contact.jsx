@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./Community.css";
+// import axios from 'axios';
+import "./Contact.css";
 import Person1 from "../../Assets/images/sampleimg3.avif";
-import Contact from "../../Assets/svg/Yuppies Chat.svg";
+import Contact1 from "../../Assets/svg/Yuppies Chat.svg";
 
-const Community = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -16,6 +17,11 @@ const Community = () => {
       phoneNumber: "",
     },
   });
+  const peopleData = [
+    { name: 'Alina Bark', role: 'Product Manager', imgSrc: Person1 },
+    { name: 'John Doe', role: 'Developer', imgSrc: Person1 },
+    { name: 'Jane Smith', role: 'Designer', imgSrc: Person1 },
+  ];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -62,8 +68,9 @@ const Community = () => {
 
   return (
     <>
+    <div className="contact-circle-top"></div>
       <div className="contact-page">
-        Contact Us
+        <h5>Contact Us</h5>
         <form className="form" onSubmit={handleSubmit}>
           <div className="contact-left-side">
             <div className="name-field">
@@ -76,7 +83,7 @@ const Community = () => {
                   placeholder="First Name"
                 />
                 {formData.errors.firstName && (
-                  <span>{formData.errors.firstName}</span>
+                  <span >{formData.errors.firstName}</span>
                 )}
               </div>
               <div className="lastname">
@@ -100,7 +107,7 @@ const Community = () => {
               onChange={handleChange}
               placeholder="Enter Your Email Address"
             />
-            {formData.errors.email && <span>{formData.errors.email}</span>}
+            {formData.errors.email &&( <span>{formData.errors.email}</span>)}
             <input
               type="tel"
               name="phoneNumber"
@@ -115,33 +122,34 @@ const Community = () => {
             <button type="submit">Send a Message</button>
           </div>
           <div className="contact-right-side">
-            <img src={Contact} alt="icon" />
+            <img src={Contact1} alt="icon" />
           </div>
         </form>
         <div className="c-section2">
           <h3>
-            Data In One <span>Space</span>
+            Our <span>Member</span>
           </h3>
           <h6>
             With our intuitive interface and user-friendly features, you can
             easily create and manage your data, reports, and more.{" "}
           </h6>
           <div className="photos">
-            <div className="person1">
-              <img src={Person1} alt="img" />
-              <h3>Alina bark</h3>
-              <span>Product Manager</span>
-            </div>
-            <div className="person1">
-              <img src={Person1} alt="img" />
-              <h3>Alina bark</h3>
-              <span>Product Manager</span>
-            </div>
-            <div className="person1">
-              <img src={Person1} alt="img" />
-              <h3>Alina bark</h3>
-              <span>Product Manager</span>
-            </div>
+            {peopleData.map((person, index) => (
+              <div className="person1" key={index}>
+                <img src={person.imgSrc} alt="img" />
+                <h3>{person.name}</h3>
+                <span>{person.role}</span>
+              </div>
+            ))}
+          </div>
+          <div className="photos">
+            {peopleData.map((person, index) => (
+              <div className="person1" key={index}>
+                <img src={person.imgSrc} alt="img" />
+                <h3>{person.name}</h3>
+                <span>{person.role}</span>
+              </div>
+            ))}
           </div>
         </div>
         <div className="FAQ-section">
@@ -201,4 +209,4 @@ const Community = () => {
   );
 };
 
-export default Community;
+export default Contact;
