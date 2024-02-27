@@ -36,12 +36,15 @@
     font-size: 1.16vw;
 }
 .navigation button{
+    width: fit-content;
+    height: fit-content;
     background-color: transparent;
     padding: 0.7vw 1vw;
     border: 0.13vw solid white;
     color: white;
     border-radius: 1.5vw;
     cursor: pointer;
+    font-size: 0.95vw;
 }
 .home img{
     width: 10vw;
