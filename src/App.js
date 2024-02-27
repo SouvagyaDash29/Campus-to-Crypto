@@ -7,9 +7,8 @@ import About from "./pages/About/About";
 import Product from "./pages/Product/Product";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/ContactUs/Contact";
-// import COMMUNITY from './community/COMMUNITY';
 import NotFound from "./pages/Error/404";
-import FrameCommunity from "./community/COMMUNITY";
+import Community from "./pages/Community/Community";
 // import { useLocation } from "react-router-dom";
 
 function App() {
@@ -39,7 +38,7 @@ function App() {
           <Route path="/COE" element={<Product />} />
           <Route path="/About" element={<About />} />
           <Route path="/Product" element={<Product />} />
-          <Route path="/Community" element={<FrameCommunity />} />
+          <Route path="/Community" element={<Community />} />
           <Route path="/Contact" element={<Contact />} />
           {/* 404 route */}
           <Route path="*" element={<NotFound />} />
