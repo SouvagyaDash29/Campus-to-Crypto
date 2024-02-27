@@ -290,6 +290,10 @@
     font-weight: 400;
     font-size: 1.4vw;
 }
+.section7 h1{
+    margin-top: 3vw;
+    font-size: 2.6vw;
+}
 .section7-content{
     display: flex;
     flex-direction: row;
@@ -314,8 +318,10 @@
     gap: 1vw;
 }
 .block1{
+    height: 9.7vw;
     text-align: center;
-    padding: 2.8vw;
+    /* padding: 2.8vw; */
+    padding: 1.5vw;
     background-color: #19161C;
 }
 .block1 h2{
