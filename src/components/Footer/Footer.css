@@ -18,6 +18,11 @@
     display: flex;
     flex-direction: column;
     gap: 1vw;
+    font-size: 1.1vw;
+}
+.copywrite{
+    font-size: 0.8vw;
+    opacity: 0.7;
 }
 .footer-section-left img{
     width: 3vw;
@@ -25,6 +30,7 @@
 .social-media-logo{
     display: flex;
     gap: 1vw;
+    transition: all 0.2s ease-in-out;
 }
 .social-media-logo svg{
     font-size: 1.1vw;
@@ -41,10 +47,14 @@
 }
 .footer-section-right{
     color: white;
+    font-size: 1.1vw;
+    font-weight: 600;
 }
 .footer-section-right ul li{
     list-style-type: none;
     padding-top: 0.7vw;
+    font-size: 1vw;
+    font-weight: 500;
 
 }
 .footer-section-right ul{
